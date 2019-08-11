@@ -228,7 +228,7 @@ figure {
   transition: 0.5s; }
   @media screen and (max-width: 768px) {
     #lib-container {
-      width: 100%;} }
+      width: 100%; } }
 
 #lib {
   min-height: 500px;
