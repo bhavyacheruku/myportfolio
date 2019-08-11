@@ -6,7 +6,7 @@ $grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
-$brand-primary: #2c98f0 !default;
+$brand-primary: #811e1d !default;
 $brand-footer: #2C2C2C !default;
 
 $brand-color-1: #2c98f0 !default;
@@ -175,9 +175,8 @@ figure {
   background: $brand-primary;
 }
 
-#colorlib-page {
+#page-main {
     width: 100%;
-    overflow: hidden;
     position: relative;
 }
 #colorlib-aside {
@@ -224,7 +223,7 @@ figure {
 			padding-right: .3em;
 		}
 	}
-	#colorlib-main-menu {
+	#lib-container-menu {
 		display: block;
 		width: 100%;
 		.collapse{
@@ -342,7 +341,7 @@ figure {
 	max-width: 1170px;
 	margin: 0 auto;
 }
-#colorlib-main {
+#lib-container {
 	width: calc(100% - 300px);
 	float: right;
 	@include transition(.5s);
@@ -353,7 +352,7 @@ figure {
 }
 
 
-#colorlib-hero {
+#lib {
 	min-height: 500px;
 	background: $brand-white url(../images/loader.gif) no-repeat center center;
 	width: 100%;
@@ -389,16 +388,16 @@ figure {
 			li {
 				display: block;
 				margin-bottom: 10px;
-				a {
-					background: rgba(0,0,0,.5);
+				a {			
+					background: transparent;
+					border: 2px solid $brand-primary;							
 					box-shadow: none;
-					width: 12px;
-					height: 12px;
+					width: 15px;
+					height: 15px;
 					cursor: pointer;
 					&.flex-active {
 						cursor: pointer;
-						background: transparent;
-						border: 2px solid $brand-primary;
+						background: #9a5553;					
 					}
 				}
 			}
@@ -498,7 +497,7 @@ body {
 			z-index: 999;
 			position: fixed;
 		}
-		#colorlib-main, .colorlib-nav-toggle {
+		#lib-container, .colorlib-nav-toggle {
 			top: 0;
 			@include translateX(300px);
 		}

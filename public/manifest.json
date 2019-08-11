@@ -1,6 +1,6 @@
 {
-  "short_name": "Portfolio app",
-  "name": "Portfolio app made with react as part of 'weekend projects' initiative",
+  "short_name": "My Portfolio",
+  "name": "My Portfolio",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,8 +8,9 @@
       "type": "image/x-icon"
     }
   ],
-  "start_url": ".",
+  "start_url": "bhavyacheruku",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "rgb(242, 227, 198)",
+  "background_image": "linear-gradient(to left bottom, rgb(242, 227, 198) 0%, rgb(167, 161, 165) 100%)"
 }
