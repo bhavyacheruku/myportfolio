@@ -2,12 +2,37 @@
   text-align: center;
 }
 
+.navbarHeader {
+  height: 0em;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+
+.navbarHeader.active{
+  height: 5em;
+  background: #ccc !important;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+
 .image {
-  background-image: url(/myportfolio/images/bhavya.jpg);
+  background-image: url(http://localhost:3000/images/bhavya.jpg);
   border-radius: 50%;
-  height: 11em;
-  width: 11em;
+  height: 8em;
+  width: 8em;
   float: right;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.headerText {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.2em;
+  font-weight: 500;
+  padding-right: 2em;
+  padding-top: 2em;
 }
 
 .App-logo {

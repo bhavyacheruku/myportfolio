@@ -102,12 +102,15 @@
 			event.preventDefault();
 			var $this = $(this);
 
-			if ($('body').hasClass('offcanvas')) {
-				$this.removeClass('active');
-				$('body').removeClass('offcanvas');	
-			} else {
+			if ($('.js-colorlib-nav-toggle').hasClass('collapsed')) {
 				$this.addClass('active');
-				$('body').addClass('offcanvas');	
+				$('.navbarHeader').addClass('active');
+				$this.removeClass('collapsed');
+			} else {
+				$this.removeClass('active');
+				$('.navbarHeader').removeClass('active');
+				$this.addClass('collapsed');
+				//$('body').addClass('offcanvas');	
 			}
 		});
 
@@ -125,7 +128,8 @@
 	    	if ( $('body').hasClass('offcanvas') ) {
 
     			$('body').removeClass('offcanvas');
-    			$('.js-colorlib-nav-toggle').removeClass('active');
+				$('.js-colorlib-nav-toggle').removeClass('active');
+				$('.navbarHeader').removeClass('active');
 			
 	    	}
 	    	
@@ -136,7 +140,8 @@
 			if ( $('body').hasClass('offcanvas') ) {
 
     			$('body').removeClass('offcanvas');
-    			$('.js-colorlib-nav-toggle').removeClass('active');
+				$('.js-colorlib-nav-toggle').removeClass('active');
+				$('.navbarHeader').removeClass('active');
 			
 	    	}
 		});
@@ -148,7 +153,7 @@
 		$('#navbar a:not([class="external"])').click(function(event){
 			var section = $(this).data('nav-section'),
 				navbar = $('#navbar');
-
+                 
 				if ( $('[data-section="' + section + '"]').length ) {
 			    	$('html, body').animate({
 			        	scrollTop: $('[data-section="' + section + '"]').offset().top - 55
@@ -158,7 +163,8 @@
 		    if ( navbar.is(':visible')) {
 		    	navbar.removeClass('in');
 		    	navbar.attr('aria-expanded', 'false');
-		    	$('.js-colorlib-nav-toggle').removeClass('active');
+				$('.js-colorlib-nav-toggle').removeClass('active');
+				$('.navbarHeader').removeClass('active');
 		    }
 
 		    event.preventDefault();

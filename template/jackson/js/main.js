@@ -104,10 +104,10 @@
 
 			if ($('body').hasClass('offcanvas')) {
 				$this.removeClass('active');
-				$('body').removeClass('offcanvas');	
+				//$('body').removeClass('offcanvas');	
 			} else {
 				$this.addClass('active');
-				$('body').addClass('offcanvas');	
+				//$('body').addClass('offcanvas');	
 			}
 		});
 
@@ -137,7 +137,7 @@
 
     			$('body').removeClass('offcanvas');
     			$('.js-colorlib-nav-toggle').removeClass('active');
-			
+				$('.navbarHeader').removeClass('active');
 	    	}
 		});
 

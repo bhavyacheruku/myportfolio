@@ -9,7 +9,7 @@ $padding-base-vertical: 14px !default;
 $brand-primary: #811e1d !default;
 $brand-footer: #2C2C2C !default;
 
-$brand-color-1: #2c98f0 !default;
+$brand-color-1: #0180FF !default;
 $brand-color-2: #ec5453 !default;
 $brand-color-3: #f9bf3f !default;
 $brand-color-4: #a84cb8 !default;
@@ -347,7 +347,6 @@ figure {
 	@include transition(.5s);
 	@media screen and (max-width: $screen-sm) {
 		width: 100%;
-		padding: 0 1em;
 	}
 }
 
